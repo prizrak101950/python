@@ -2,17 +2,20 @@ a = int(input("введи первое число"))
 b = int(input("введи второе число"))
 c = int(input("введи третье число"))
 
-m = a
+mini = a
 if(a < b) and (a < c):
-    m = a
+    mini = a
 elif b < c:
-    m = b
+    mini = b
 else:
-    m = c
-print(m)
+    mini = c
+print(mini)
 
 d = int(input("введи  число"))
 if d < 0:
     print(-1)
-if d > 0:
+elif d > 0:
     print(1)
+else:
+    print(0)
+
